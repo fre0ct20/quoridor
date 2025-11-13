@@ -1,0 +1,51 @@
+.mode-toggle {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.mode-toggle button {
+    padding: 10px 15px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.mode-toggle button.active {
+    background-color: #333;
+    color: white;
+    border-color: #333;
+}
+
+.board-grid-1717 {
+    display: grid;
+    /* コママス(50px)と壁マス(10px)を交互に17個定義 */
+    grid-template-columns: repeat(8, 50px 10px) 50px;
+    grid-template-rows: repeat(8, 50px 10px) 50px;
+    /* ボード全体に枠線を付ける */
+    border: 3px solid #5a2d0c;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.game-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.hands-p1 {
+    margin-right: 10px;
+    color: red
+}
+
+.hands-p2 {
+    margin-right: 10px;
+    color: blue;    
+}
+
+.current-pawn {
+    margin-left: 10px;
+    
+}

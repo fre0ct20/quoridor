@@ -1,0 +1,35 @@
+.wall-placeholder {
+    /* 親のGridによってサイズが決定される */
+    box-sizing: border-box;
+    position: relative;
+    /* デフォルトは透過 */
+    background-color: transparent;
+}
+
+/* 垂直線 */
+.wall-placeholder.V {
+    border-left: 1px dashed #aaa;
+}
+
+/* 水平線 */
+.wall-placeholder.H {
+    border-top: 1px dashed #aaa;
+}
+
+.wall-placeholder .wall-highlight {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+
+    /* 設置エリアを見やすくする */
+    background-color: rgba(200, 50, 50, 0.2);
+    z-index: 1;
+}
+
+.wall-highlight.start-pos {
+    background-color: yellow; /* 黄色で強調 */
+    z-index: 2;
+}

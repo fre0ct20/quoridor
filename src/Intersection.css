@@ -1,0 +1,28 @@
+.intersection-container {
+    display: flex;
+}
+
+/* 実際にクリックできる、壁を置くための細いエリア */
+.wall-placeholder {
+    z-index: -1; /* 他の要素より手前に表示 */
+    cursor: pointer;
+    background-color: transparent;
+}
+
+/* 垂直方向の壁のプレースホルダー */
+.vertical {
+    width: 1px; /* クリックできる幅 */
+    height: 100px; /* 2マス分の高さ */
+    margin-right: 50px; /* 1マス分の隙間を空ける */
+}
+
+/* 水平方向の壁のプレースホルダー */
+.horizontal {
+    width: 100px; /* 2マス分の幅 */
+    height: 5px; /* クリックできる高さ */
+    margin-bottom: 50px; /* 1マス分の隙間 */
+}
+
+.wall-placeholder:hover {
+    background-color:lightblue;
+}

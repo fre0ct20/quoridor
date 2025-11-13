@@ -1,0 +1,19 @@
+.wall {
+    background-color: #4a280d;
+    box-sizing: border-box;
+    /* WallPlaceholderのハイライトより手前に */
+    z-index: 2; 
+}
+
+.wall.horizontal {
+    height: 100%;
+}
+
+.wall.vertical {
+    width: 100%;
+}
+
+.wall.intersection {
+    background-color: #331e0c;
+}
+
