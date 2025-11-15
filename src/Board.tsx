@@ -374,7 +374,10 @@ const Board = () => {
 
         updateHistory(
             {p1: p1Pos, p2: p2Pos},
-            {p1: p1Walls, p2: p2Walls},
+            {
+                p1: turn === 1 ? nextWallsCount : p1Walls,
+                p2: turn === 2 ? nextWallsCount :p2Walls
+            },
             nextTurn,
             potentialWalls
         )
