@@ -1,12 +1,12 @@
-import React, { useEffect } from "react";
 import { useState } from "react";
-import Square from './Square';
-import WallPlaceholder from './WallPlaceholder.tsx';
-import Wall from './Wall';
-import Pawn from './Pawn';
+import Square from './Square.jsx';
+import WallPlaceholder from './WallPlaceholder.jsx';
+import Wall from './Wall.jsx';
+import Pawn from './Pawn.jsx';
 import './Board.css';
 
-// ------------------------------------
+// -------------------
+// -----------------
 // 17*17 グリッドの初期状態定義
 // ------------------------------------
 const createEmptyGrid = () => {
@@ -316,10 +316,6 @@ const Board = () => {
 
         // 現在の状態をcurrentStateから取得
         const {p1Pos, p2Pos, placedWalls, p1Walls, p2Walls, turn} = currentState;
-
-
-        // 操作するプレイヤーに合わせた状態を定義
-        const pWalls = turn === 1 ? p1Walls : p2Walls;
 
         // 2回目のクリックの場合(終点の確認と設置)
         const startR = wallStartPos.r;
