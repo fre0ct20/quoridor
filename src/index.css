@@ -28,6 +28,8 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  justify-content: center;
+  background-color: white;
 }
 
 h1 {
@@ -48,6 +50,7 @@ button {
 }
 button:hover {
   border-color: #646cff;
+  background-color: lightyellow;
 }
 button:focus,
 button:focus-visible {
