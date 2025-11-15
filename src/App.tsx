@@ -10,7 +10,6 @@ function App() {
         <h1>Quoridor</h1>
         <Board />
       </div>
-      
     </>
   )
 }
