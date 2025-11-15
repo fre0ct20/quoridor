@@ -1,5 +1,5 @@
 # コリドール
-![スタート画面](.readme_images/start.png)
+![スタート画面](https://github.com/fre0ct20/quoridor/blob/main/readme_images/start.png)
 ## ルール
 ・P1を赤い駒、 P2を青い駒とし、P1からゲームが開始する。
 ・相手の駒よりも先に自身の駒を対面側に到達させれば勝利
