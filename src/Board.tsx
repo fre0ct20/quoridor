@@ -491,7 +491,7 @@ const Board = () => {
                     onClick={handleUndo}
                     disabled={currentMove === 0}
                 >
-                    ⇐1つ目に戻る
+                    ⇐1つ前に戻る
                 </button>
 
                 <button

@@ -1,73 +1,35 @@
-# React + TypeScript + Vite
+#コリドール
+![スタート画面](.readme_images/start.png)
+##ルール
+・P1を赤い駒、 P2を青い駒とし、P1からゲームが開始する。
+・相手の駒よりも先に自身の駒を対面側に到達させれば勝利
+・プレイヤーは自身のターンに駒の操作または壁の設置が可能
+・相手プレイヤーがゴールに到達できなくなるよう壁を配置してはならない(ゴールに到達できるルートが1つでもあれば問題ない)
+例:相手の駒を壁で四方を囲み動けなくするなど
+・使用できる壁の枚数は1プレイヤー当たり10枚
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+##操作方法
+1.駒の移動方法
+コマの移動が選択されている状態で現在の手番の駒の4方向のうち進みたい方向のマスをクリックする
+![駒の移動方法](.readme_images/pawn_move.png)
 
-Currently, two official plugins are available:
+2.壁の設置方法
+「壁を置く」を選択する
+  ![壁の設置方法1](.readme_images/wall.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  壁を設置したい箇所(細長い箇所)を2箇所クリックする
+  1回クリックするとクリックした箇所が黄色く変化する。
+  ![壁の設置方法2](.readme_images/wall_select1.png)
 
-## React Compiler
+  黄色く変化している箇所に隣接している細い線の箇所をクリックすると壁を配置できる
+  ![壁の設置方法3](.readme_images/wall_select2.png)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+3.ゲーム再スタート
+  どちらかがゴールした際、勝利画面が表示され「もう一度プレイ」ボタンが表示される
+  「もう一度プレイ」をクリックするとゲームが初めからになる
+  ![ゲーム再スタート](.readme_images/restart.png)
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+4.履歴機能
+  「1つ前にもどる」をクリックすると1つ前の状態に戻ることが可能
+  初めまで戻ることが可能
+  ![履歴機能](.readme_images/history.png)
