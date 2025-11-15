@@ -11,25 +11,25 @@
 ## 操作方法
 1.駒の移動方法
 コマの移動が選択されている状態で現在の手番の駒の4方向のうち進みたい方向のマスをクリックする
-![駒の移動方法](.readme_images/pawn_move.png)
+![駒の移動方法](https://github.com/fre0ct20/quoridor/blob/main/readme_images/pawn_move.png)
 
 2.壁の設置方法
 「壁を置く」を選択する
-  ![壁の設置方法1](.readme_images/wall.png)
+  ![壁の設置方法1](https://github.com/fre0ct20/quoridor/blob/main/readme_images/wall.png)
 
   壁を設置したい箇所(細長い箇所)を2箇所クリックする
   1回クリックするとクリックした箇所が黄色く変化する。
-  ![壁の設置方法2](.readme_images/wall_select1.png)
+  ![壁の設置方法2](https://github.com/fre0ct20/quoridor/blob/main/readme_images/wall_select1.png)
 
   黄色く変化している箇所に隣接している細い線の箇所をクリックすると壁を配置できる
-  ![壁の設置方法3](.readme_images/wall_select2.png)
+  ![壁の設置方法3](https://github.com/fre0ct20/quoridor/blob/main/readme_images/wall_select2.png)
 
 3.ゲーム再スタート
   どちらかがゴールした際、勝利画面が表示され「もう一度プレイ」ボタンが表示される
   「もう一度プレイ」をクリックするとゲームが初めからになる
-  ![ゲーム再スタート](.readme_images/restart.png)
+  ![ゲーム再スタート](https://github.com/fre0ct20/quoridor/blob/main/readme_images/restart.png)
 
 4.履歴機能
   「1つ前にもどる」をクリックすると1つ前の状態に戻ることが可能
   初めまで戻ることが可能
-  ![履歴機能](.readme_images/history.png)
+  ![履歴機能](https://github.com/fre0ct20/quoridor/blob/main/readme_images/history.png)
