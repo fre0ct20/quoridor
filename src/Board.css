@@ -45,7 +45,10 @@
     color: blue;    
 }
 
+.current-player {
+    color: black;
+}
+
 .current-pawn {
     margin-left: 10px;
-    
 }

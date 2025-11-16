@@ -29,6 +29,10 @@
     z-index: 1;
 }
 
+.wall-placeholder:hover {
+    background-color: orange;
+}
+
 .wall-highlight.start-pos {
     background-color: yellow; /* 黄色で強調 */
     z-index: 2;
