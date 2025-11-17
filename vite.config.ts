@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
 
   // ビルド時の設定
-  base: 'https://github.com/fre0ct20/docs/',
+  base: 'https://fre0ct20.github.io/quoridor/',
 
   build: {
     outDir: 'docs' // 出力先のフォルダをdocsに設定(gitに公開するため)　デフォルトはdist
