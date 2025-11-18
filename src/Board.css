@@ -20,12 +20,21 @@
 .board-grid-1717 {
     display: grid;
     /* コママス(50px)と壁マス(10px)を交互に17個定義 */
-    grid-template-columns: repeat(8, 50px 10px) 50px;
-    grid-template-rows: repeat(8, 50px 10px) 50px;
+    grid-template-columns: repeat(17, 5fr 1fr);
+    grid-template-rows: repeat(17, 5fr 1fr);
+    /* 余分なfrを削除 */
+    grid-template-columns: repeat(17, [c] 1fr);
+    grid-template-rows: repeat(17, [r] 1fr);
     /* ボード全体に枠線を付ける */
     border: 3px solid #5a2d0c;
     margin: 0 auto;
     margin-bottom: 50px;
+
+    /* 画面幅の上限を90%とする */
+    width: 90vw;
+    /* 最大幅を設定し、PC表示時に巨大化しないよう制限 */
+    max-width: 600px;
+    aspect-ratio: 1 / 1; /* 正方形を維持 */
 }
 
 .game-info {
@@ -51,4 +60,13 @@
 
 .current-pawn {
     margin-left: 10px;
+}
+
+.game-wrapper {
+    /* 画面全体で中央寄せ、最小のパディングを確保 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    min-height: 100vh;
 }
