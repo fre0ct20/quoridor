@@ -23,6 +23,8 @@
     grid-template-columns: repeat(8, 50px 10px) 50px;
     grid-template-rows: repeat(8, 50px 10px) 50px;
     
+
+
     /* ボード全体に枠線を付ける */
     border: 3px solid #5a2d0c;
     margin: 0 auto;
@@ -67,20 +69,39 @@
     color: black;
 }
 
-/* @media (max-width: 600px) {
+@media (max-width: 600px) {
+
+    .mode-toggle {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .mode-toggle button {
+        padding: 1vw 1.5vw;
+        margin: 0 5px;
+        border: 1px solid #ccc;
+        cursor: pointer;
+        transition: background-color 0.2s;
+
+    }
+
+    .mode-toggle button.active {
+        background-color: #333;
+        color: white;
+        border-color: #333;
+    }
+
     .game-wrapper {
         flex-direction: column;
         align-items: stretch;
-        gap: 10px;
-    }
-
-    .mode-toggle {
-        width: 100%;
-        order: 1;
+        gap: 1vw;
+        font-size: 3vw;
     }
 
     .board-grid-1717 {
-        width: 95vw;
-        order: 2;
+        grid-template-columns: repeat(8, 5fr 1fr) 5fr;
+        grid-template-rows: repeat(8, 5fr 1fr) 5fr;
+        width: 80vw;
+        aspect-ratio: 1 / 1;
     }
-} */
+}
