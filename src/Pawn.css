@@ -15,3 +15,10 @@
     background-color: blue;
     border: 2px solid #28568f;
 }
+
+@media (max-width: 600px) {
+    .pawn {
+        width: 4vw;
+        height: 4vw;
+    }
+}
