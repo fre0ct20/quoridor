@@ -29,7 +29,7 @@
     z-index: 1;
 }
 
-.wall-placeholder:hover {
+.wall-highlight:hover {
     background-color: orange;
 }
 

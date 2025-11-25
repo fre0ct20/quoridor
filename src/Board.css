@@ -22,6 +22,8 @@
     /* コママス(50px)と壁マス(10px)を交互に17個定義 */
     grid-template-columns: repeat(8, 50px 10px) 50px;
     grid-template-rows: repeat(8, 50px 10px) 50px;
+    /* grid-template-columns: repeat(8, 5fr 1fr) 5fr;
+    grid-template-rows: repeat(8, 5fr 1fr) 5fr; */
     
     /* ボード全体に枠線を付ける */
     border: 3px solid #5a2d0c;
@@ -63,7 +65,7 @@
     min-height: 100vh;
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
     .game-wrapper {
         flex-direction: column;
         align-items: stretch;
@@ -79,4 +81,4 @@
         width: 95vw;
         order: 2;
     }
-}
+} */
