@@ -49,10 +49,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
   background-color: lightslategray;
+  color: black;
 }
 button:hover {
   border-color: #646cff;
-  background-color: lightyellow;
+  background-color:lightblue;
 }
 button:focus,
 button:focus-visible {

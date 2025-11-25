@@ -16,6 +16,11 @@
     border-top: 1px dashed #aaa;
 }
 
+/* 交点 */
+.wall-placeholder.I {
+    pointer-events:none; /* クリックを不要にする */
+}
+
 .wall-placeholder .wall-highlight {
     position: absolute;
     top: 0;
@@ -34,6 +39,6 @@
 }
 
 .wall-highlight.start-pos {
-    background-color: yellow; /* 黄色で強調 */
+    background-color: orangered; /* 黄色で強調 */
     z-index: 2;
 }

@@ -3,12 +3,20 @@ import Pawn from './Pawn';
 import './Square.css';
 
 // マス目コンポーネント
-const Square = ({player, onClick}) => {
+const Square = ({player, mode, onClick}) => {
+
+  // modeがmoveの時だけ'can-hover'クラスを適用
+  const hoverClass = mode === 'move' ? 'can-hover' : '';
+  
   return(
     <>
-      <button className="square" onClick={onClick}>
+      <div 
+        className={`square ${hoverClass}`}
+        onClick={onClick}
+      >
         {player > 0 && <Pawn player={player} />}
-      </button>
+        
+      </div>
     </>
   );
 };

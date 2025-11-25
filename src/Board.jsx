@@ -513,6 +513,7 @@ const Board = () => {
                                 <Square 
                                     key={`${r}-${c}`}
                                     player={cellValue}
+                                    mode={mode}
                                     onClick={() => handleMove(r, c)}    
                                 /> 
                             );

@@ -17,3 +17,7 @@
   /* aspect-ratio: 1 / 1; */
 
 }
+
+.square.can-hover:hover {
+  background-color: orange;
+}
